@@ -1,0 +1,17 @@
+.footer {
+  height: 60px;
+  background: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.footer img {
+  width: 30px;
+  height: 30px;
+  margin: 0 1rem;
+  color: black;
+}
