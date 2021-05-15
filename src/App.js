@@ -45,7 +45,7 @@ function App() {
             <Contact />
           </Route>
           <Route path="/article/:id">
-            <Article />
+            {!loading ? <Article data={data} /> : 'loading...'}
           </Route>
         </Switch>
 
