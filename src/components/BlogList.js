@@ -2,10 +2,10 @@ import React from 'react'
 import style from './Bloglist.module.css'
 import Blog from './Blog'
 
-const BlogList = (props) => {
+const BlogList = ({ data }) => {
   return (
     <div className={style.blog}>
-      {props.data.map((blog) => (
+      {data.map((blog) => (
         <Blog
           key={blog.id}
           title={blog.title}
