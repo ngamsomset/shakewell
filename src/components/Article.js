@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router'
+import style from './Article.module.css'
 
 const Article = ({ data }) => {
   const { id } = useParams()
@@ -9,10 +10,12 @@ const Article = ({ data }) => {
   }
 
   return (
-    <section>
-      <h2>{data[id].title}</h2>
-      <div dangerouslySetInnerHTML={createMarkUp(id)} />
-    </section>
+    <div>
+      <h2 className={style.heading}>{data[id].title}</h2>
+      <section className={style.section}>
+        <div dangerouslySetInnerHTML={createMarkUp(id)} />
+      </section>
+    </div>
   )
 }
 
