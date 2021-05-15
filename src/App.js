@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import BlogList from './components/BlogList'
 import Contact from './components/Contact'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Article from './components/Article'
 
 function App() {
   const [loading, setIsloading] = useState(true)
@@ -42,6 +43,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/article/:id">
+            <Article />
           </Route>
         </Switch>
 
