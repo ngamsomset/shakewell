@@ -4,6 +4,8 @@ import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Footer from './components/Footer'
 import BlogList from './components/BlogList'
+import Contact from './components/Contact'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 function App() {
   const [loading, setIsloading] = useState(true)
@@ -30,12 +32,22 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
-      <Navbar />
-      <Home />
-      {!loading ? <BlogList data={data} /> : 'loading...'}
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+            {!loading ? <BlogList data={data} /> : 'loading...'}
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+        </Switch>
+
+        <Footer />
+      </div>
+    </Router>
   )
 }
 
