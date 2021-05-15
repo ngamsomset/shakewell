@@ -8,7 +8,12 @@ const Article = ({ data }) => {
     return { __html: data[id].body }
   }
 
-  return <div dangerouslySetInnerHTML={createMarkUp(id)}></div>
+  return (
+    <section>
+      <h2>{data[id].title}</h2>
+      <div dangerouslySetInnerHTML={createMarkUp(id)} />
+    </section>
+  )
 }
 
 export default Article
