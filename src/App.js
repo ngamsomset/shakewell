@@ -19,7 +19,6 @@ function App() {
         const data = await res.json()
         setData(data.data.data)
         setIsloading(false)
-        console.log(data.data.data[0])
       }
     } catch (err) {
       console.log(err)
@@ -34,7 +33,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Home />
-      {!loading ? <BlogList data={data[0]} /> : 'loading...'}
+      {!loading ? <BlogList data={data} /> : 'loading...'}
       <Footer />
     </div>
   )
