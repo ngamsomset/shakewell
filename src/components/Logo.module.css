@@ -1,7 +1,13 @@
 .image {
   background-color: #333;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .image img {
+    width: 500px;
+  }
 }
