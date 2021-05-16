@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import './App.css'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Footer from './components/Footer'
@@ -35,7 +34,7 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
+      <div>
         <Navbar />
         <Switch>
           <Route exact path="/">
