@@ -37,7 +37,7 @@ function App() {
       <div>
         <Navbar />
         <Switch>
-          <Route exact path="/home">
+          <Route exact path="/">
             <Home />
             {!loading ? <BlogList data={data} /> : 'loading...'}
           </Route>
