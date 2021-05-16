@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from './logo.png'
 import style from './Blog.module.css'
-import { HiChevronRight } from 'react-icons/hi'
+import { HiOutlineArrowRight } from 'react-icons/hi'
 import { IconContext } from 'react-icons'
 
 const Blog = ({ title, created, excerpt }) => {
@@ -18,9 +18,9 @@ const Blog = ({ title, created, excerpt }) => {
         <div className={style.contentwrap}>
           <h2>
             <IconContext.Provider
-              value={{ style: { verticalAlign: 'middle' } }}
+              value={{ style: { verticalAlign: 'middle', marginLeft: '10px' } }}
             >
-              {title} <HiChevronRight />
+              {title} <HiOutlineArrowRight />
             </IconContext.Provider>
           </h2>
           <p>Published: {output}</p>
