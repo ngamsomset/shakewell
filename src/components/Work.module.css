@@ -1,0 +1,14 @@
+.heading img {
+  height: 100%;
+  width: 600px;
+}
+
+.heading h1 {
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .heading img {
+    width: 500px;
+  }
+}

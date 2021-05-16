@@ -1,12 +1,9 @@
 .footer {
   height: 60px;
   background: #fff;
+  position: relative;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  padding: 2rem;
+  margin-top: auto;
 }
 
 .footer img {

@@ -7,6 +7,7 @@ import BlogList from './components/BlogList'
 import Contact from './components/Contact'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Article from './components/Article'
+import Work from './components/Work'
 
 function App() {
   const [loading, setIsloading] = useState(true)
@@ -44,11 +45,13 @@ function App() {
           <Route path="/contact">
             <Contact />
           </Route>
+          <Route path="/work">
+            <Work />
+          </Route>
           <Route path="/article/:id">
             {!loading ? <Article data={data} /> : 'loading...'}
           </Route>
         </Switch>
-
         <Footer />
       </div>
     </Router>
