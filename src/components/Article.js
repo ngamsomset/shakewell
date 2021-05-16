@@ -27,7 +27,7 @@ const Article = ({ data }) => {
             },
           }}
         >
-          <Link to="/">
+          <Link to="/home">
             <HiOutlineArrowCircleLeft />
           </Link>
         </IconContext.Provider>
