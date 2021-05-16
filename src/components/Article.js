@@ -3,6 +3,7 @@ import { useParams } from 'react-router'
 import style from './Article.module.css'
 import { HiOutlineArrowCircleLeft } from 'react-icons/hi'
 import { IconContext } from 'react-icons'
+import { Link } from 'react-router-dom'
 
 const Article = ({ data }) => {
   const { id } = useParams()
@@ -26,7 +27,9 @@ const Article = ({ data }) => {
             },
           }}
         >
-          <HiOutlineArrowCircleLeft />
+          <Link to="/">
+            <HiOutlineArrowCircleLeft />
+          </Link>
         </IconContext.Provider>
       </div>
       <section className={style.section}>
