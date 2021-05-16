@@ -10,7 +10,7 @@ const Article = ({ data }) => {
   }
 
   return (
-    <div>
+    <div className={style.article}>
       <h2 className={style.heading}>{data[id].title}</h2>
       <section className={style.section}>
         <div dangerouslySetInnerHTML={createMarkUp(id)} />
