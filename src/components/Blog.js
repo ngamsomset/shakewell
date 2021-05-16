@@ -18,7 +18,7 @@ const Blog = ({ title, created, excerpt }) => {
           <p>Published: {output}</p>
           <p>{excerpt}</p>
           <p>Author: John Doe</p>
-          <div>
+          <div className={style.hash}>
             <span>#design</span>
             <span>#frontend</span>
             <span>#backend</span>

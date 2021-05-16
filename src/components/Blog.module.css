@@ -6,6 +6,9 @@
   color: #fff;
   text-align: left;
   margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card:hover {
@@ -30,6 +33,11 @@
   padding: 0.2rem;
   margin: 0.5rem;
   font-size: 0.8rem;
+}
+
+.hash {
+  display: flex;
+  align-items: center;
 }
 
 .contentwrap span:hover {
