@@ -6,7 +6,7 @@ const Work = () => {
   return (
     <div className={style.heading}>
       <img src={logo} alt="logo"></img>
-      <h1>Contact</h1>
+      <h1>Work</h1>
     </div>
   )
 }

@@ -12,4 +12,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #333;
   height: 100%;
+  position: relative;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 115px;
 }
