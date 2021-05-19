@@ -5,8 +5,8 @@ import { HiOutlineArrowRight } from 'react-icons/hi'
 import { IconContext } from 'react-icons'
 
 const Blog = ({ title, created, excerpt }) => {
-  var myDate = new Date(created)
-  var output =
+  const myDate = new Date(created)
+  const output =
     myDate.getDate() + '/' + myDate.getMonth() + '/' + myDate.getFullYear()
 
   return (
